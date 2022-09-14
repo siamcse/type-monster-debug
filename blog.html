@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Typing Speed</title>
+    <title>Blog</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,31 +14,41 @@
 
 <body>
     <header>
-        <h1 class="title"><img src="./logo.png" /></h1>
+        <h1 class="title">JavaScript Concept</h1>
     </header>
     <main>
-        <div id="show-time">0 seconds</div>
-
-        <div class="box-container">
-            <div id="question"></div>
-
-            <div id="display" class="inactive"></div>
-
-            <div class="buttons">
-                <button id="starts">START</button>
-            </div>
-
-            <div class="divider-container">
-                <div class="line"></div>
-                <h1 class="title2">History</h1>
-                <div class="line"></div>
-            </div>
-            <div id="histories"></div>
-        </div>
-
-        <div id="countdown"></div>
-        <div id="modal-background" class="hidden"></div>
-        <div id="result" class="hidden"></div>
+        <section class="box-container">
+            <article class="card">
+                <h2>Local Storage vs Session Storage</h2>
+                <p>The Web Storage API consists of two mechanisms: sessionStorage and localStorage. Both sessionStorage and localStorage
+                maintain a separate storage area for each available origin for the duration of the page session.
+                
+                The main difference between sessionStorage and localStorage is that sessionStorage only maintains a storage area while
+                the browser is open (including when the page reloads or restores) while localStorage continues to store data after the
+                browser is closed. In other words, whereas data stored in sessionStorage is cleared when the page is closed, data stored
+                in localStorage does not expire.</p>
+            </article>
+            <article class="card">
+                <h2>Global Scope Vs. Block Scope</h2>
+                <p><span class="red bold">Global Scope:</span> The variables defined outside of any function or curly brackets are known as global variables and have global scope.
+                Global scope means that the variables can be accessed from any part of that program, any function or conditional state
+                can access that variable.</p>
+                <p><span class="red bold">Block Scope:</span> A variable when declared inside the if or switch conditions or inside for or while loops, are accessible
+                within that particular condition or loop. To be consise the variables declared inside the curly braces are called as
+                within block scope.</p>
+            </article>
+            <article class="card">
+                <h2>What is Event Loop?</h2>
+                <p>The event loop is an architectural design pattern that allows code to run asynchronously on the javascript engines and
+                makes it possible for code to execute blocking instructions first and when available execute asynchronous functions.</p>
+            </article>
+            <article class="card">
+                <h2>When do we get undefined in JavaScript?</h2>
+                <p>A variable that has not been assigned a value is of type undefined. A method or statement also returns undefined if the
+                variable that is being evaluated does not have an assigned value. A function returns undefined if a value was not
+                returned.</p>
+            </article>
+        </section>
     </main>
 
     <script src="./history.js"></script>
